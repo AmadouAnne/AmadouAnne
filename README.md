@@ -1,3 +1,53 @@
+<!--🤔INTERESTTITLE-->
+<p align="center">
+<img src="https://i.imgur.com/ozEwbHs.gif">
+
+<!--🖼️🖼️INTERSTLOGOS-->
+<p align="center">
+<img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/wireshark/wireshark-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/metasploit/metasploit-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/nmap/nmap-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg" width="60">
+<img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" width="60">
+
+<p align="center">
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=AmadouAnne&show_icons=true&theme=vue-dark" alt="AmadouAnne-stats" />
+<img align="center" style="margin-top:15px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmadouAnne&layout=compact&theme=vue-dark&langs_count=9" alt="AmadouAnne-langs" />
+</p>
+
+<p align="center">  
+<img align="center" src="https://github-profile-trophy.vercel.app/?username=AmadouAnne&theme=discord&no-frame=true&row=1&&margin-w=20" alt="AmadouAnne-trophies" />
+</p>
+
+<div align="center">
+<img src="https://komarev.com/ghpvc/?username=AmadouAnne&logo=GitHub&label=github%20visits&color=brightgreen&logoColor=white&style=plastic" alt="AmadouAnne-visits">  
+</div>
+
+<h1 align="center">
+  Connect With Me
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" height="25px">
+</h1>
+
+<p align="center">
+  <br>
+  <a href="https://www.linkedin.com/in/amadou-anne/" target="_blank">
+    <code><img height="60" width="60" src="https://skillicons.dev/icons?i=linkedin"/></code>
+  </a>
+  <a href="https://twitter.com/AmadouAnne" target="_blank">
+    <code><img height="60" width="60" src="https://skillicons.dev/icons?i=twitter"/></code>
+  </a>
+  <a href="mailto:amadou.anne@example.com">
+    <code><img src="https://raw.githubusercontent.com/timche/gmail-desktop/main/media/icon.svg" alt="Email" height="60" width="60"></code>
+  </a>     
+</p>
+<br/>
+<br/>
+
 # 👋 Hi, I’m @AmadouAnne
 
 ### 💻 Développeur passionné par la cybersécurité et les réseaux
@@ -85,7 +135,12 @@ Si tu partages les mêmes passions ou si tu as un projet intéressant, n'hésite
 
 ---
 
-<!---
-AmadouAnne/AmadouAnne is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<div align="center">
+
+### 𝚂𝚑𝚘𝚠 𝚜𝚘𝚖𝚎 ❤️ 𝚋𝚢 𝚜𝚝𝚊𝚛𝚛𝚒𝚗𝚐 𝚜𝚘𝚖𝚎 𝚘𝚏 𝚝𝚑𝚎 𝚛𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚒𝚎𝚜!
+
+</div>
+
+#
+
+![footer](https://i.imgur.com/3J3QZ9Q.png)
