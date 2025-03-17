@@ -113,14 +113,6 @@ Un scanner de vulnérabilités pour identifier les failles de sécurité dans le
 
 ---
 
-## 📊 **Statistiques GitHub**
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AmadouAnne&show_icons=true&theme=dark)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AmadouAnne&layout=compact&theme=dark)
-
----
-
 ## 🎯 **Objectifs futurs**
 
 - Contribuer à des projets open source de cybersécurité.
