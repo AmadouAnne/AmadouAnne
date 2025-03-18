@@ -35,13 +35,13 @@
 
 <p align="center">
   <br>
-  <a href="https://www.linkedin.com/in/amadou-anne/" target="_blank">
+  <a href="https://www.linkedin.com/in/amadou-tidiane-anne/" target="_blank">
     <code><img height="60" width="60" src="https://skillicons.dev/icons?i=linkedin"/></code>
   </a>
   <a href="https://twitter.com/AmadouAnne" target="_blank">
     <code><img height="60" width="60" src="https://skillicons.dev/icons?i=twitter"/></code>
   </a>
-  <a href="mailto:amadou.anne@example.com">
+  <a href="mailto:amadoutalibe74@gmail.com">
     <code><img src="https://raw.githubusercontent.com/timche/gmail-desktop/main/media/icon.svg" alt="Email" height="60" width="60"></code>
   </a>     
 </p>
