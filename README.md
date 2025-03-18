@@ -81,10 +81,11 @@ Si tu as un projet intéressant ou une idée, n'hésite pas à me contacter !
 
 ## 📫 **Comment me contacter**
 
-- 📧 **Email** : [amadou.anne@example.com](mailto:amadou.anne@example.com)
-- 💼 **LinkedIn** : [Amadou Anne](https://www.linkedin.com/in/amadou-anne)
+- 📧 **Email** : [amadoutalibe74@gmail.com](mailto:amadoutalibe74@gmail.com)
+- 💼 **LinkedIn** : [Amadou Anne](https://www.linkedin.com/in/amadou-tidiane-anne/)
 - 🐦 **Twitter** : [@AmadouAnne](https://twitter.com/AmadouAnne)
 - 🌍 **Site web** : [www.amadouanne.com](https://www.amadouanne.com)
+- 🛠️ **RootMe** : [NOM3R5Y](https://www.root-me.org/No_Mercy_?lang=fr)
 
 ---
 
