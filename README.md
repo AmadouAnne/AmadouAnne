@@ -57,7 +57,7 @@ C/C++ (MISRA C)       █████████░░░ Pratique projet
 Assembleur ARM/x86    ███████░░░░░ Notions solides
 STM32 / ESP32         ████████░░░░ Pratique projet
 ARM Cortex-M          ███████░░░░░ En apprentissage
-FreeRTOS              ███████░░░░░ Pratique régulière
+FreeRTOS              ███████░░░░░ En apprentissage
 Buildroot / Yocto     ██████░░░░░░ Initiation
 Bus CAN/SPI/I2C/UART  ███████░░░░░ Pratique projet
 Arduino               █████████░░░ Pratique régulière
@@ -72,10 +72,10 @@ Secure Boot / RoT     ███████░░░░░ Notions solides
 PKI / TLS / mTLS      ████████░░░░ Pratique projet
 Hardening Kernel      ███████░░░░░ Pratique projet
 Pentest IoT           ██████░░░░░░ En apprentissage
-Analyse CVE           ██████░░░░░░ Pratique projet
-Reverse Eng. (Ghidra) █████░░░░░░░ Pratique projet
+Analyse CVE           ██████░░░░░░ Initiation
+Reverse Eng. (Ghidra) █████░░░░░░░ Initiation
 Firmware Analysis     █████░░░░░░░ Initiation
-Binwalk               █████░░░░░░░ Pratique projet
+Binwalk               █████░░░░░░░ Initiation
 ```
 
 </td>
@@ -86,12 +86,12 @@ Binwalk               █████░░░░░░░ Pratique projet
 **⚔️ SOC & Blue / Red Team**
 ```
 Wazuh SIEM            ██████░░░░░░ Pratique projet
-Suricata IDS          █████░░░░░░░ Notions solides
+Suricata IDS          █████░░░░░░░ Initiation
 ELK / OpenSearch      █████░░░░░░░ Initiation
 TheHive / MISP        ████░░░░░░░░ Découverte
 Metasploit / Nmap     ███████░░░░░ Pratique projet
-Burp Suite            ██████░░░░░░ Notions solides
-OpenVAS / Nessus      ██████░░░░░░ Notions solides
+Burp Suite            ██████░░░░░░ Initiation
+OpenVAS / Nessus      ██████░░░░░░ Initiation
 OSINT                 ███████░░░░░ Pratique CTF
 ```
 
@@ -143,15 +143,120 @@ OpenCV / Robotique    ██████░░░░░░ Pratique projet
 
 ## 🚀 `ls -la ~/projects/`
 
+### 🗺️ Roadmap Embedded Security — 6 projets · Mars → Août 2026
+
+> Objectif : Stage M2 — Thales / Airbus / Quarkslab / Synacktiv / ANSSI
+
+| # | Projet | Stack | Durée | Statut |
+|---|---|---|---|---|
+| P1 | FreeRTOS Sécurisé STM32 | STM32 • FreeRTOS • MPU • mbedTLS | 2 sem. | 🔄 En cours |
+| P2 | Secure Boot Chain of Trust | RPi • U-Boot • RSA • PKI | 3 sem. | 🔄 En cours |
+| P3 | Patch Diffing Firmware IoT | Ghidra • Python • CVE • NVD API | 3 sem. | ✅ Terminé |
+| P4 | Fuzzer Modbus TCP | Scapy • Python • ICS/SCADA | 4 sem. | ⏳ Juin 2026 |
+| P5 | Sandbox Malware ARM | QEMU • Flask • strace • Docker | 4 sem. | ⏳ Juil. 2026 |
+| P6 | Side-Channel Attack AES | STM32 • CPA • Pearson • Masking | 4 sem. | ⏳ Août 2026 |
+
+<details>
+<summary><b>🔵 [P1 — 🔄 EN COURS] FreeRTOS Sécurisé sur STM32</b> &nbsp;<code>Mars 2026</code></summary>
+<br>
+
+```
+Stack: STM32 Nucleo • arm-none-eabi-gcc • FreeRTOS • MPU • mbedTLS • UART
+```
+- Système multitâche avec **isolation mémoire MPU par tâche**
+- Violation mémoire volontaire → gestion HardFault → isolation hardware réelle
+- Watchdog IWDG : détection freeze tâche en **< 2 secondes**
+- UART sécurisé avec **challenge-response + signature mbedTLS**
+
+`C embarqué` `FreeRTOS` `MPU ARM` `STM32` `Watchdog` `mbedTLS` `Vector Table`
+</details>
+
+<details>
+<summary><b>🟣 [P2 — 🔄 EN COURS] Secure Boot & Chain of Trust sur Raspberry Pi</b> &nbsp;<code>Avril 2026</code></summary>
+<br>
+
+```
+Stack: Raspberry Pi 3/4 • U-Boot • OpenSSL • RSA-2048 • aarch64-gcc
+```
+- Chain of trust complète : **ROM → bootloader → kernel signé RSA-2048**
+- Tout binaire non signé est rejeté au boot
+- 4 vecteurs d'attaque documentés avec mitigations
+- Étude : différences TPM / HSM / TrustZone
+
+`Secure Boot` `Root of Trust` `U-Boot` `RSA-2048` `ARM EL0-EL3` `PKI`
+</details>
+
+<details>
+<summary><b>🟠 [P3 — ✅ TERMINÉ] Patch Diffing & Analyse de Firmware IoT</b> &nbsp;<code>Mai 2026</code></summary>
+<br>
+
+```
+Stack: Ghidra • Binwalk • Python • capstone • NVD API
+```
+- Outil Python qui compare deux versions de firmware IoT (OpenWRT)
+- Identification automatique des fonctions modifiées via **hash + similarité Jaccard**
+- Corrélation avec CVE publiés via **NVD API** → rapport automatique
+- **> 80% de précision** sur les fonctions associées aux CVE connus
+
+`Ghidra` `Reverse Engineering` `Binwalk` `CVE Analysis` `Python scripting` `NVD API` `ASM ARM`
+</details>
+
+<details>
+<summary><b>🔴 [P4 — ⏳ Juin 2026] Fuzzer de Protocole Modbus TCP</b></summary>
+<br>
+
+```
+Stack: Python • Scapy • pymodbus • Docker — ICS/SCADA
+```
+- Fuzzer **grammar-based** : mutation intelligente structurée (pas aléatoire)
+- Cible : protocoles industriels (usines, centrales, eau)
+- Détection crash : timeout / exception / réponse invalide
+- Logging structuré + reproducteur automatique de crashs
+
+`Fuzzing` `Modbus TCP` `ICS/SCADA` `Scapy` `Protocoles industriels`
+</details>
+
+<details>
+<summary><b>🟢 [P5 — ⏳ Juillet 2026] Sandbox d'Analyse de Malware ARM</b></summary>
+<br>
+
+```
+Stack: QEMU • Python • Flask • Docker • strace • Linux namespaces
+```
+- Exécution de binaires ARM suspects dans **QEMU instrumenté**
+- Capture syscalls / réseau / filesystem → rapport JSON automatique
+- Scoring de dangerosité + analyse statique (entropy, packing)
+- Tests sur malware ARM réels via MalwareBazaar
+
+`QEMU` `Malware ARM` `Analyse dynamique` `Linux namespaces` `Flask` `strace`
+</details>
+
+<details>
+<summary><b>⚫ [P6 — ⏳ Août 2026] Side-Channel Attack sur AES-128</b></summary>
+<br>
+
+```
+Stack: STM32 Nucleo • Oscilloscope • Résistance shunt 10Ω • Python • numpy
+```
+- **Attaque CPA** (Correlation Power Analysis) sur AES-128 réel
+- Acquisition 1000+ traces de consommation → extraction clé via **corrélation Pearson**
+- Implémentation **masking** comme contre-mesure → vérification échec de l'attaque
+- Graphes comparatifs attaque / contre-mesure documentés
+
+`CPA` `AES hardware` `Corrélation Pearson` `Crypto physique` `Masking` `STM32`
+</details>
+
+---
+
+### 📦 Projets antérieurs
+
 <details>
 <summary><b>🔐 Infrastructure Réseau Sécurisée — PKI, Zero-Trust & Hardening</b> &nbsp;<code>2024</code></summary>
 <br>
 
 ```
-Stack: PKI interne • HAProxy • IPtables • mTLS • Wazuh SOC
-       DNS • Apache2 • Postfix • FTPS • HTTPS
+Stack: PKI interne • HAProxy • IPtables • mTLS • Wazuh SOC • DNS • Postfix • FTPS
 ```
-- Infrastructure LAN entièrement routée et isolée
 - **~60% de réduction de la surface d'attaque** via PKI interne + filtrage IPtables
 - Détection d'intrusion temps réel via Wazuh
 
@@ -163,77 +268,19 @@ Stack: PKI interne • HAProxy • IPtables • mTLS • Wazuh SOC
 <br>
 
 ```
-Stack: Raspberry Pi • OpenCV • Canal TLS • ARM — IoT Security
+Stack: Raspberry Pi • OpenCV • Canal TLS • ARM
 ```
-- Robot Linux embarqué avec **suivi visuel OpenCV** (détection gilet jaune)
-- Canal de commande **chiffré TLS end-to-end** via TCP/IP
-- Défense en profondeur conforme aux exigences IoT critiques
+- Suivi visuel OpenCV + canal de commande **chiffré TLS end-to-end**
 </details>
 
 <details>
-<summary><b>🐧 Linux Embarqué Minimal Durci — Buildroot & Secure Boot</b> &nbsp;<code>2023</code></summary>
+<summary><b>🐧 Linux Embarqué Minimal Durci — Buildroot</b> &nbsp;<code>2023</code></summary>
 <br>
 
 ```
-Stack: Buildroot • Hardening Kernel • IPtables • SSH • Télémétrie Python
+Stack: Buildroot • Hardening Kernel • IPtables • SSH • Python
 ```
-- OS sur mesure avec stripping kernel + durcissement SSH
-- Réduction de la surface d'attaque mesurable
-- Outils Python de télémétrie et tests de sécurité embarquée
-</details>
-
-<details>
-<summary><b>🔑 Infrastructure de Gestion de Clés (IGC / PKI)</b> &nbsp;<code>2024</code></summary>
-<br>
-
-```
-Stack: OpenSSL • PKI • HTTPS • Authentification Client mTLS
-```
-- Génération, signature, distribution et révocation de certificats
-- Activation HTTPS + authentification client sur réseau local sécurisé
-</details>
-
-<details>
-<summary><b>🌐 Serveur VPN Raspberry Pi — OpenVPN & WireGuard</b> &nbsp;<code>2023</code></summary>
-<br>
-
-```
-Stack: Raspberry Pi • PiVPN • OpenVPN • WireGuard
-```
-- Déploiement VPN sécurisé pour les connexions Internet
-- Étude du chiffrement, routage et tunneling réseau
-</details>
-
-<details>
-<summary><b>📡 Télémétrie Ultrasonique — Système Embarqué Temps Réel</b> &nbsp;<code>2023</code></summary>
-<br>
-
-```
-Stack: Arduino • C/C++ • Capteur Ultrasonique • Écran LCD
-```
-- Mesure de distance en temps réel avec affichage LCD
-- Programmation bas-niveau capteurs + gestion des calculs embarqués
-</details>
-
-<details>
-<summary><b>🏠 SmartHome Secure — Dashboard IoT Supervisé</b> &nbsp;<code>2024</code></summary>
-<br>
-
-```
-Stack: IHM • Chart.js • Web App
-```
-- Supervision et contrôle d'objets connectés simulés
-- Dashboard global avec alertes, mode sécurité et graphiques interactifs
-</details>
-
-<details>
-<summary><b>🔍 Vulnerability Scanner & Firewall Manager</b></summary>
-<br>
-
-- Scanner de vulnérabilités pour identifier les failles systèmes
-- Gestionnaire de règles pare-feu pour sécuriser les infrastructures réseau
-
-📁 [`/AmadouAnne/vulnerability_scanner`](https://github.com/AmadouAnne/vulnerability_scanner) | [`/AmadouAnne/firewall_manager`](https://github.com/AmadouAnne/firewall_manager)
+- OS sur mesure strippé + durcissement SSH + télémétrie Python
 </details>
 
 ---
