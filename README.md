@@ -36,7 +36,7 @@ DEGREE   = "M1 Logiciels & Systèmes Embarqués — UBO"
 STATUS   = "Stage / Alternance — Open to opportunities"
 LANGUAGES= "FR 🇫🇷 | EN 🇬🇧"
 RESEARCH = "HAL Open Science — hal-05486729v1"
-WEBSITE  = "https://amadouanne.com"
+WEBSITE  = "https://portfolio-psi-snowy-qot7p207a3.vercel.app/"
 MOTTO    = "Apprendre · Concevoir · Innover"
 FUN      = "Chess ♟️ | CTF 🚩 | Vintage hardware restoration 🖥️"
 ```
@@ -71,11 +71,11 @@ Arduino               █████████░░░ Pratique régulière
 Secure Boot / RoT     ███████░░░░░ Notions solides
 PKI / TLS / mTLS      ████████░░░░ Pratique projet
 Hardening Kernel      ███████░░░░░ Pratique projet
-Pentest IoT           ██████░░░░░░ En apprentissage
-Analyse CVE           ██████░░░░░░ Initiation
-Reverse Eng. (Ghidra) █████░░░░░░░ Initiation
-Firmware Analysis     █████░░░░░░░ Initiation
-Binwalk               █████░░░░░░░ Initiation
+Pentest IoT           ██████░░░░░░ Pratique régulière
+Analyse CVE           ██████░░░░░░ Notions solides
+Reverse Eng. (Ghidra) █████░░░░░░░ Pratique régulière
+Firmware Analysis     █████░░░░░░░ Pratique projet
+Binwalk               █████░░░░░░░ Pratique régulière
 ```
 
 </td>
@@ -86,12 +86,12 @@ Binwalk               █████░░░░░░░ Initiation
 **⚔️ SOC & Blue / Red Team**
 ```
 Wazuh SIEM            ██████░░░░░░ Pratique projet
-Suricata IDS          █████░░░░░░░ Initiation
+Suricata IDS          █████░░░░░░░ Pratique régulière
 ELK / OpenSearch      █████░░░░░░░ Initiation
 TheHive / MISP        ████░░░░░░░░ Découverte
 Metasploit / Nmap     ███████░░░░░ Pratique projet
-Burp Suite            ██████░░░░░░ Initiation
-OpenVAS / Nessus      ██████░░░░░░ Initiation
+Burp Suite            ██████░░░░░░ Pratique régulière
+OpenVAS / Nessus      ██████░░░░░░ Pratique régulière
 OSINT                 ███████░░░░░ Pratique CTF
 ```
 
