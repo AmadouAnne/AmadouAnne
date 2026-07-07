@@ -33,7 +33,7 @@ NAME     = "Amadou Tidiane Anne"
 ROLE     = "Embedded Security Engineer"
 LOCATION = "Brest, France 🇫🇷"
 DEGREE   = "M1 Logiciels & Systèmes Embarqués — UBO"
-STATUS   = "Stage / Alternance — Open to opportunities"
+STATUS   = "Stage / Alternance 2026-2027 — ouvert aussi à une thèse CIFRE"
 LANGUAGES= "FR 🇫🇷 | EN 🇬🇧"
 RESEARCH = "HAL Open Science — hal-05486729v1"
 WEBSITE  = "https://portfolio-psi-snowy-qot7p207a3.vercel.app/"
@@ -116,6 +116,16 @@ OpenCV / Robotique    ██████░░░░░░ Pratique projet
 
 ---
 
+## 🎓 `cat research_statement.md`
+
+> Je conçois et j'attaque des systèmes embarqués — puis j'écris ce que j'apprends.
+> Ma prépublication HAL établit qu'on peut détecter des anomalies sur Linux
+> contraint via les métriques natives `/proc`, pour moins de 0.5% de coût CPU.
+> Mes projets actuels (Modbus/TCP, side-channel AES, patch diffing CVE)
+> étendent cette question à l'IoT/OT : **comment détecter et durcir des
+> systèmes sous contrainte matérielle réelle ?** Objectif à moyen terme :
+> une thèse CIFRE en cybersécurité industrielle/IoT-OT.
+
 ## 📰 `cat publications.bib`
 
 ```bibtex
@@ -143,21 +153,21 @@ OpenCV / Robotique    ██████░░░░░░ Pratique projet
 
 ## 🚀 `ls -la ~/projects/`
 
-### 🗺️ Roadmap Embedded Security — 6 projets · Mars → Août 2026
+### 🗺️ Roadmap Embedded Security — 6 projets
 
-> Objectif : Stage M2 — Thales / Airbus / Quarkslab / Synacktiv / ANSSI
+> Détail, statut et code source à jour : **[→ embedded-security](https://github.com/AmadouAnne/embedded-security#projects)**
 
-| # | Projet | Stack | Durée | Statut |
-|---|---|---|---|---|
-| P1 | FreeRTOS Sécurisé STM32 | STM32 • FreeRTOS • MPU • mbedTLS | 2 sem. | 🔄 En cours |
-| P2 | Secure Boot Chain of Trust | RPi • U-Boot • RSA • PKI | 3 sem. | 🔄 En cours |
-| P3 | Patch Diffing Firmware IoT | Ghidra • Python • CVE • NVD API | 3 sem. | ✅ Terminé |
-| P4 | Fuzzer Modbus TCP | Scapy • Python • ICS/SCADA | 4 sem. | ⏳ Juin 2026 |
-| P5 | Sandbox Malware ARM | QEMU • Flask • strace • Docker | 4 sem. | ⏳ Juil. 2026 |
-| P6 | Side-Channel Attack AES | STM32 • CPA • Pearson • Masking | 4 sem. | ⏳ Août 2026 |
+| # | Projet | Stack |
+|---|---|---|
+| P1 | FreeRTOS Sécurisé STM32 | STM32 • FreeRTOS • MPU • mbedTLS |
+| P2 | Secure Boot Chain of Trust | RPi • U-Boot • RSA • PKI |
+| P3 | Patch Diffing Firmware IoT | Ghidra • Python • CVE • NVD API |
+| P4 | Fuzzer Modbus TCP | Scapy • Python • ICS/SCADA |
+| P5 | Sandbox Malware ARM | QEMU • Flask • strace • Docker |
+| P6 | Side-Channel Attack AES | STM32 • CPA • Pearson • Masking |
 
 <details>
-<summary><b>🔵 [P1 — 🔄 EN COURS] FreeRTOS Sécurisé sur STM32</b> &nbsp;<code>Mars 2026</code></summary>
+<summary><b>🔵 P1 — FreeRTOS Sécurisé sur STM32</b></summary>
 <br>
 
 ```
@@ -172,7 +182,7 @@ Stack: STM32 Nucleo • arm-none-eabi-gcc • FreeRTOS • MPU • mbedTLS • U
 </details>
 
 <details>
-<summary><b>🟣 [P2 — 🔄 EN COURS] Secure Boot & Chain of Trust sur Raspberry Pi</b> &nbsp;<code>Avril 2026</code></summary>
+<summary><b>🟣 P2 — Secure Boot & Chain of Trust sur Raspberry Pi</b></summary>
 <br>
 
 ```
@@ -187,7 +197,7 @@ Stack: Raspberry Pi 3/4 • U-Boot • OpenSSL • RSA-2048 • aarch64-gcc
 </details>
 
 <details>
-<summary><b>🟠 [P3 — ✅ TERMINÉ] Patch Diffing & Analyse de Firmware IoT</b> &nbsp;<code>Mai 2026</code></summary>
+<summary><b>🟠 P3 — Patch Diffing & Analyse de Firmware IoT</b></summary>
 <br>
 
 ```
@@ -202,7 +212,7 @@ Stack: Ghidra • Binwalk • Python • capstone • NVD API
 </details>
 
 <details>
-<summary><b>🔴 [P4 — ⏳ Juin 2026] Fuzzer de Protocole Modbus TCP</b></summary>
+<summary><b>🔴 P4 — Fuzzer de Protocole Modbus TCP</b></summary>
 <br>
 
 ```
@@ -217,7 +227,7 @@ Stack: Python • Scapy • pymodbus • Docker — ICS/SCADA
 </details>
 
 <details>
-<summary><b>🟢 [P5 — ⏳ Juillet 2026] Sandbox d'Analyse de Malware ARM</b></summary>
+<summary><b>🟢 P5 — Sandbox d'Analyse de Malware ARM</b></summary>
 <br>
 
 ```
@@ -232,7 +242,7 @@ Stack: QEMU • Python • Flask • Docker • strace • Linux namespaces
 </details>
 
 <details>
-<summary><b>⚫ [P6 — ⏳ Août 2026] Side-Channel Attack sur AES-128</b></summary>
+<summary><b>⚫ P6 — Side-Channel Attack sur AES-128</b></summary>
 <br>
 
 ```
@@ -249,19 +259,6 @@ Stack: STM32 Nucleo • Oscilloscope • Résistance shunt 10Ω • Python • n
 ---
 
 ### 📦 Projets antérieurs
-
-<details>
-<summary><b>🔐 Infrastructure Réseau Sécurisée — PKI, Zero-Trust & Hardening</b> &nbsp;<code>2024</code></summary>
-<br>
-
-```
-Stack: PKI interne • HAProxy • IPtables • mTLS • Wazuh SOC • DNS • Postfix • FTPS
-```
-- **~60% de réduction de la surface d'attaque** via PKI interne + filtrage IPtables
-- Détection d'intrusion temps réel via Wazuh
-
-📁 [`/AmadouAnne/network_security_monitoring`](https://github.com/AmadouAnne/network_security_monitoring)
-</details>
 
 <details>
 <summary><b>🤖 SENTRY-BOT — Système Embarqué Autonome Sécurisé</b> &nbsp;<code>2023</code></summary>
